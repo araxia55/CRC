@@ -1,0 +1,29 @@
+---
+import Resume from '../Resume.astro';
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>CV_Raymund_Herradura</title>
+  </head>
+  <body
+    class="text-sm flex min-h-screen flex-col items-center justify-center gap-2 bg-gray-200 print:min-h-0"
+  >
+    <Resume />
+    <!-- <div class="flex gap-4 p-4 text-lg print:hidden">
+      <a class="underline" download="CV_Raymund_Herradura" href="/Resume.pdf"
+        >Download PDF</a
+      >
+      <button class="underline" onclick="print()"
+      >Print</button>
+    </div> -->
+    <div class="flex gap-4 p-4 text-lg print:hidden">
+      <button onclick="window.print()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Print / Save as PDF
+      </button>
+  </div>
+  </body>
+</html>
